@@ -1,0 +1,29 @@
+@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Página Inicial";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Bem-vindo ao Gerenciador de Despesas</h1>
+    <p>Veja abaixo suas despesas registradas:</p>
+</div>
+
+<h2>Lista de Despesas</h2>
+<ul>
+    @foreach (var expense in Model.Expenses)
+    {
+        <li class="expense-item">
+            <div class="expense-info">
+                <span>R$ @expense.Value - @expense.Description</span>
+                <form method="post" asp-page="/Index" asp-route-id="@expense.Id" class="delete-form">
+                    <button type="submit" class="btn btn-danger">Excluir</button>
+                </form>
+            </div>
+        </li>
+    }
+</ul>
+
+<h3>Total de Despesas: R$ @Model.TotalExpenses</h3>
+
+<a href="/AddExpense" class="btn btn-primary">Adicionar Nova Despesa</a>

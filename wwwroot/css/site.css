@@ -1,0 +1,41 @@
+/* Estilo para a lista de despesas */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li.expense-item {
+  display: flex; /* Torna a lista um container flexível */
+  justify-content: space-between; /* Espalha o conteúdo da lista entre os lados */
+  align-items: center; /* Alinha verticalmente o conteúdo */
+  margin: 5px 0;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.expense-info {
+  display: flex;
+  justify-content: space-between; /* Garante que o conteúdo seja distribuído entre os dois lados */
+  width: 100%; /* Faz o conteúdo ocupar toda a largura disponível */
+  align-items: center; /* Alinha o conteúdo verticalmente */
+}
+
+button.btn-danger {
+  margin-left: 10px; /* Dá um espaçamento entre o texto e o botão */
+}
+
+a, button {
+  color: white;
+  background-color: #4CAF50;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+a:hover, button:hover {
+  background-color: #45a049;
+}
