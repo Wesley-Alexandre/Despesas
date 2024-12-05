@@ -24,8 +24,3 @@ Este projeto é um **gerenciador de despesas pessoais**, onde o usuário pode ad
 - **.NET 6 SDK** (ou superior) instalado.
 - **Node.js** (se desejar usar alguma ferramenta de build frontend, como o Live Server, por exemplo).
 
-### Passos
-
-1. Clone o repositório:
-   ```bash
-   git clone https://github.com/seu-usuario/gerenciador-despesas.git
